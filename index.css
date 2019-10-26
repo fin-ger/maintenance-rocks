@@ -119,6 +119,7 @@ nav section.separator {
     width: 1px;
     background: white;
     padding: 0;
+    align-self: center;
 }
 
 nav section.related {
