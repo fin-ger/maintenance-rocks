@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Maintenance Rocks!</title>
+        <meta charset="utf-8">
+        <link ref="stylesheet" type="text/css" href="inter.css">
+        <link ref="stylesheet" type="text/css" href="hack.css">
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <header>
+            <section>
+                <h1>
+                    Maintenance Rocks!
+                </h1>
+
+                <p>
+                    Reaching out to the open source community to help maintain your project.
+                </p>
+            </section>
+        </header>
+
+        <main>
+            <section>
+                You are a developer of a small open source project and don't know
+                how to properly maintain it or simply do not have the time
+                to do it?
+            </section>
+        </main>
+
+        <main class="ask">
+            <section>
+                <b>Ask other developers for help!</b>
+            </section>
+        </main>
+
+        <main>
+            <section>
+                How? Add the <img src="badge.svg"> badge to your project
+                and encourage other developers to get in touch with you to help you out!
+            </section>
+        </main>
+
+        <main>
+            <section>
+                <b>Adding the badge to your project</b>
+            </section>
+
+            <section>
+                First, you need to tell other developers how to contact you. The
+                easiest way to do this is by adding a <code>CONTACT.md</code> file
+                to your project. This file might look like this:
+            </section>
+
+            <section>
+                <pre># Contact
+
+If you encounter any problems with the software please open an issue in the
+issue tracker of this project.
+
+If you are looking for a way to get in touch with the developer choose one
+of the following methods:
+
+ - [Telegram](t.me/username)
+ - [Email](mailto:my@email.address)</pre>
+            </section>
+
+            <section>
+                Next you can add one of the following snippets to your projects
+                <code>README.md</code> and replace <code>my.contact.url</code>
+                with your contact URL:
+            </section>
+
+            <section>
+                <b>Markdown</b>
+
+                <pre>[![Looking for Maintenance](https://maintenance.rocks/badge.svg)](https://offering.maintenance.rocks#my.contact.url)</pre>
+            </section>
+
+            <section>
+                <b>reStructuredText</b>
+
+                <pre>.. image:: https://maintenance.rocks/badge.svg
+    :alt: Looking for Maintenance
+    :target: https://offering.maintenance.rocks#my.contact.url</pre>
+            </section>
+
+            <section>
+                <b>Textile</b>
+
+                <pre>!https://maintenance.rocks/badge.svg!:https://offering.maintenance.rocks#my.contact.url</pre>
+            </section>
+
+            <section>
+                <b>Rdoc</b>
+
+                <pre>{<img src="https://maintenance.rocks/badge.svg" alt="Looking for Maintenance" />}[https://offering.maintenance.rocks#my.contact.url]</pre>
+            </section>
+
+            <section>
+                <b>AsciiDoc</b>
+
+                <pre>image:https://maintenance.rocks/badge.svg["Looking for Maintenance", link="https://offering.maintenance.rocks#my.contact.url"]</pre>
+            </section>
+
+            <section>
+                <b>HTML</b>
+
+                <pre>&lt;a href="https://offering.maintenance.rocks#my.contact.url"
+   alt="Looking for Maintenance"&gt;
+    &lt;img src="https://maintenance.rocks/badge.svg"&gt;
+&lt;/a&gt;</pre>
+            </section>
+        </main>
+
+        <footer>
+            <section>
+                And you are done! Congratulations, you have successfully added the badge
+                to your project. Now sit back and see if someone is willing to help you out.
+            </section>
+        </footer>
+
+        <nav>
+            <section>
+                <section class="related">
+                    <h1>Related Projects</h1>
+
+                    <a href="http://unmaintained.tech">
+                        No Maintenance Intended
+                    </a>
+
+                    <a href="https://isitmaintained.com">
+                        Is It Maintained?
+                    </a>
+
+                    <a href="https://shields.io/category/other">
+                        shields.io Maintenance Badge
+                    </a>
+                </section>
+
+                <section class="separator"></section>
+
+                <section class="authors">
+                    <h1>Authors</h1>
+
+                    <a href="https://github.com/fin-ger">
+                        Fin Christensen
+                    </a>
+
+                    <a href="https://github.com/jwuensche">
+                        Johannes W&uuml;nsche
+                    </a>
+                </section>
+
+                <section class="badges">
+                    <a href="https://github.com/fin-ger/maintenance-rocks">
+                        <img src="./GitHub-Mark.svg">
+                    </a>
+                </section>
+            </section>
+        </nav>
+    </body>
+</html>

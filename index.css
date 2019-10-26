@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    font-family: inter;
+}
+
+body > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    body > * > section {
+        width: 768px;
+    }
+}
+
+header {
+    background: #EBF2FA;
+    color: #5A7181;
+    padding: 4em 0 3em 0;
+}
+
+header h1 {
+    color: #2C76A1;
+}
+
+main {
+    padding: 2em 0;
+    background: #fff;
+    color: #333;
+}
+
+main.ask {
+    background: #F2FAEB;
+    color: #6B815A;
+    text-align: center;
+}
+
+main > section {
+    padding-bottom: 2em;
+}
+
+main > section:last-child {
+    padding-bottom: 0;
+}
+
+main img {
+    vertical-align: text-bottom;
+}
+
+main a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #2C76A1;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+main code {
+    background: #eee;
+    color: #2C76A1;
+    font-family: Hack;
+    font-size: 0.8em;
+    padding: 0.2em 0.5em;
+    border-radius: 2px;
+}
+
+main pre {
+    padding: 0.5em 1em;
+    background: #eee;
+    color: #2C76A1;
+    font-family: Hack;
+    font-size: 0.8em;
+    border-radius: 2px;
+    white-space: pre-wrap;
+}
+
+footer {
+    background: #EBF2FA;
+    color: #333;
+    padding: 2em 0;
+    border-bottom: 1em solid #fff;
+}
+
+nav {
+    padding: 2em 0;
+    font-size: 90%;
+}
+
+nav > section {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-areas:
+        "related separator authors"
+        "badges badges badges";
+    justify-items: start;
+    align-items: start;
+    justify-content: center;
+    align-content: start;
+    width: auto;
+}
+
+nav > section > section {
+    position: relative;
+    padding: 0 2em;
+}
+
+nav section.separator {
+    grid-area: separator;
+    height: 80%;
+    width: 1px;
+    background: white;
+    padding: 0;
+}
+
+nav section.related {
+    grid-area: related;
+}
+
+nav section.authors {
+    grid-area: authors;
+    padding-right: 0;
+}
+
+nav section.badges {
+    padding-top: 2em;
+    grid-area: badges;
+    text-align: center;
+    justify-self: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    line-height: 1.5em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav h1 {
+    margin: 0;
+    padding-bottom: 1em;
+}
+
+nav img {
+    height: 32px;
+    width: 32px;
+}
